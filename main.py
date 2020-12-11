@@ -16,6 +16,25 @@ is determined by the size of the “slave widgets” inside it.
 https://docs.python.org/3.9/library/tkinter.html#the-packer
 """
 
+# Modify an attribute
+my_label["text"] = "New text"
+my_label.config(text="New text")
+
+
+# Button
+def button_onclick():
+    new_text = e1.get()
+    my_label.config(text=new_text)
+
+
+my_button = tkinter.Button(text="Click Me!", command=button_onclick)
+my_button.pack()
+
+# Entry
+e1 = tkinter.Entry(width=15)
+e1.pack()
+# print(e1.get())  # Prints nothing because the code runs immediately after object creation
+
 
 # Just like Turtle Graphics, this must be the last line of the program
 window.mainloop()  # Keep the window open
