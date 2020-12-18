@@ -13,9 +13,9 @@ window.config(padx=20, pady=20)
 
 # Label
 my_label = tkinter.Label(text="My label", font=("Arial", 16, "bold"))  # Create the label
-# my_label.pack(side="left)  # Specify layout on the screen (default: top center)
+my_label.pack(side="left")  # Specify layout on the screen (default: top center)
 # my_label.place(x=100, y=150)  # Specify exact coordinates for the widget
-my_label.grid(row=0, column=0)  # Define a grid position in row, column format
+# my_label.grid(row=0, column=0)  # Define a grid position in row, column format
 """
 In contrast to the more cumbersome placer,the packer takes 
 qualitative relationship specification - above, to the left of, 
@@ -31,22 +31,22 @@ my_label.config(text="New text", padx=20, pady=20)
 
 
 # Button
-my_button = tkinter.Button(text="Click Me!", command=button_onclick)
+my_button = tkinter.Button(text="Click Me!", command=button_onclick).pack()
 # my_button.pack()
-my_button.grid(row=1, column=1)
-my_button.config(padx=20, pady=20)
+# my_button.grid(row=1, column=1)
+# my_button.config(padx=20, pady=20)
 
-new_button = tkinter.Button(text="Click Me!", command=button_onclick)
+new_button = tkinter.Button(text="Click Me!", command=button_onclick).pack()
 # my_button.pack()
-new_button.grid(row=0, column=2)
-new_button.config(padx=20, pady=20)
+# new_button.grid(row=0, column=2)
+# new_button.config(padx=20, pady=20)
 
 
 # Entry
 my_entry = tkinter.Entry(width=15)
-# e1.pack()
+my_entry.pack()
 # print(e1.get())  # Prints nothing because the code runs immediately after object creation
-my_entry.grid(row=3, column=3)
+# my_entry.grid(row=3, column=3)
 # my_entry.config(padx=20, pady=20)  # Doesn't work - no padding
 
 

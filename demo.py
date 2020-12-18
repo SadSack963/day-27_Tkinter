@@ -35,7 +35,7 @@ text.insert(END, "Example of multi-line text entry.")
 print(text.get("1.0", END))
 text.pack()
 
-# Spinbox
+# Spinboxá
 def spinbox_used():
     # gets the current value in spinbox.
     print(spinbox.get())

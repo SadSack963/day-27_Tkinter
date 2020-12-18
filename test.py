@@ -9,7 +9,7 @@ tk.Label(master,
 tk.Label(master,
          text="Last Name").grid(row=1)
 
-e1 = tk.Entry(master)
+e1 = tk.Entry(masteár)
 e2 = tk.Entry(master)
 
 e1.grid(row=0, column=1)
